@@ -35,8 +35,10 @@ public class SparklingWater extends Water {
     }
 
     public void degas(){
-        this.bubblesList.get(bubblesList.size() - 1).boom();
-        this.bubblesList.remove(bubblesList.size() - 1);
+        for (int i = 1000; i > 0; i--) {
+            this.bubblesList.get(bubblesList.size() - 1).boom();
+            this.bubblesList.remove(bubblesList.size() - 1);
+        }
     }
 
 
