@@ -25,7 +25,7 @@ public class Bubble {
 
 
     public void boom  (){
-        System.out.println("Cramp!" );
+//        System.out.println("Cramp!" );
     }
 
 }
