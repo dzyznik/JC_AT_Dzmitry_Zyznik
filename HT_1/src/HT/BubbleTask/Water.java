@@ -7,7 +7,4 @@ public abstract  class Water {
     public String smell;
     public int temperature;
 
-    public Water(int temperature){
-        this.temperature = temperature;
-    }
 }
