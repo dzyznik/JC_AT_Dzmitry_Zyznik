@@ -1,4 +1,4 @@
-package HT.CycleTask;
+package main.java.tasks.day1;
 
 public class Task_2 {
     public static void main(String[] args) {

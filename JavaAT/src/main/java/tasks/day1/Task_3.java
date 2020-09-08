@@ -1,4 +1,4 @@
-package HT.CycleTask;
+package main.java.tasks.day1;
 import java.util.Random;
 
 public class Task_3 {
