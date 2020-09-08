@@ -1,4 +1,4 @@
-package HT.BubbleTask;
+package main.java.project.bubbles;
 
 public class Bubble {
     public static final double VOLUME = 0.3;

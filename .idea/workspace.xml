@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8eb4e56e-e561-4dec-9c81-4a05fb503657" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/HT_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/HT_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Bottle.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bottle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Bubble.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bubble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/SparklingWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/SparklingWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Water.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Water.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/META-INF/HT_1.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/META-INF/HT_1.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Bottle.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/bottle/Bottle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/bubbles/Bubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/runner/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/SparklingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/water/SparklingWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Water.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/water/Water.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_3.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h3UqWXRTMfzK7tXAuKJH09UJwR" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Lesson3">
+    <configuration name="Lesson3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson3" />
+      <module name="JC_AT_Dzmitry_Zyznik" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.project.runner.Runner" />
+      <module name="JC_AT_Dzmitry_Zyznik" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.project.bottle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.tasks.day1.Task_1" />
+      <module name="JC_AT_Dzmitry_Zyznik" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.tasks.day1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Lesson3" />
+        <item itemvalue="Application.Task_1" />
+        <item itemvalue="Application.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8eb4e56e-e561-4dec-9c81-4a05fb503657" name="Default Changelist" comment="" />
+      <created>1599239460695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599239460695</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1599243883595">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599243883595" />
+    <state x="279" y="132" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1599391905958">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="279" y="132" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1440.900@0.0.1440.900" timestamp="1599391905958" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1599582969355">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599582969355" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1599391810855" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1599582969354">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599582969354" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1599391810852" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1599582969353">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599582969353" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1599391810850" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1599582969355">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599582969355" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1599391810854" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1599249534665">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599249534665" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1599249534663">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599249534663" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1599249534662">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599249534662" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1599249534664">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599249534664" />
+    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599583161825">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599583161825" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1599391412183">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1599391412183" />
+  </component>
+</project>

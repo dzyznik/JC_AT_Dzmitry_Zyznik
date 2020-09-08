@@ -1,7 +1,7 @@
-package HT.BubbleTask;
+package main.java.project.bottle;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
+import main.java.project.bubbles.Bubble;
+import main.java.project.water.SparklingWater;
 
 public class Bottle {
     public double volume;
@@ -9,7 +9,7 @@ public class Bottle {
     int t;
     boolean warmWater = false;
 
-    Bottle(double volume, String water,int t,boolean warmWater){
+    public Bottle(double volume, String water, int t, boolean warmWater){
         this.volume = volume;
         this.water = water;
         this.t = t;
@@ -17,7 +17,7 @@ public class Bottle {
     }
 
 
-    Bottle(double volume, String water,int t){
+    public Bottle(double volume, String water, int t){
         this.volume = volume;
         this.water = water;
         this.t = t;
