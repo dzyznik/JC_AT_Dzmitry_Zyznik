@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb4e56e-e561-4dec-9c81-4a05fb503657" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JC_AT_Dzmitry_Zyznik.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/HT_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bottle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bubble.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/SparklingWater.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Water.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/META-INF/HT_1.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

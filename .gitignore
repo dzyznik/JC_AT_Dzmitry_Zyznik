@@ -1,5 +1,6 @@
 # Default ignored files
 .idea/
-.JavaAT/out/
+JavaAT/out/
 .DS_Store
-.iml
+*.iml
+*.gitignore
