@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8eb4e56e-e561-4dec-9c81-4a05fb503657" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/HT_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/HT_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Bottle.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bottle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Bubble.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bubble.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/SparklingWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/SparklingWater.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/BubbleTask/Water.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Water.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/HT/CycleTask/Task_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/out/production/HT_1/META-INF/HT_1.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/out/production/HT_1/META-INF/HT_1.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Bottle.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/bottle/Bottle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/bubbles/Bubble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/runner/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/SparklingWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/water/SparklingWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/BubbleTask/Water.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/project/water/Water.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT_1/src/HT/CycleTask/Task_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAT/src/main/java/tasks/day1/Task_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JC_AT_Dzmitry_Zyznik.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/HT_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bottle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Bubble.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/SparklingWater.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/BubbleTask/Water.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/HT/CycleTask/Task_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaAT/out/production/HT_1/META-INF/HT_1.kotlin_module" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,10 +165,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599249534664" />
-    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599583161825">
+    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog" timestamp="1599583361807">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599583161825" />
+    <state x="453" y="170" key="git4idea.branch.GitSmartOperationDialog/0.0.1440.900/1440.0.1920.1080@0.0.1440.900" timestamp="1599583361807" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1599391412183">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
