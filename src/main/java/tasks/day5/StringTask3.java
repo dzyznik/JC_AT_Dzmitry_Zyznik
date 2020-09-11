@@ -1,10 +1,5 @@
 package main.java.tasks.day5;
 
-public class StringTask3 {
-    package main.java.tasks.day5;
-
-import java.util.Arrays;
-
     //имеется текст лога в виде:
 //
 //access_log.2020.09.07 212.168.101.5 granted
@@ -43,4 +38,3 @@ import java.util.Arrays;
 
         }
     }
-}
