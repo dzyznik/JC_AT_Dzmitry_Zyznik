@@ -1,5 +1,6 @@
-package main.java.project.bottle;
+package main.java.project.boxing;
 
+import javafx.scene.paint.Material;
 import main.java.project.bubbles.Bubble;
 import main.java.project.water.SparklingWater;
 
@@ -11,7 +12,7 @@ import main.java.project.water.SparklingWater;
 //------ + есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке
 //------ + есть публичный метод SparklingWater getWater() возвращающий обьект воды
 //------ + есть публичный метод setWater(SparklingWater water) добавляющий новый обьект воды
-public class Bottle {
+public class Bottle extends Vessel {
 
 
     private double volume;
@@ -27,6 +28,13 @@ public class Bottle {
         water = new SparklingWater();
         water.pump(b);
         System.out.println("New bottle is created");
+    }
+
+    public Bottle(double volume, double diameter, int weight, Material material){
+        setVolume(volume);
+        setDiameter(diameter);
+        setWeight(weight);
+        setMaterial(material);
     }
 
     public void open() {
