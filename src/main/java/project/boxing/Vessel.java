@@ -1,5 +1,7 @@
 package main.java.project.boxing;
 
+import main.java.project.material.Material;
+
 //- each Vessel has:
 //        -- private double volume;
 //        -- private double diameter;

@@ -1,7 +1,7 @@
 package main.java.project.boxing;
 
-import javafx.scene.paint.Material;
 import main.java.project.bubbles.Bubble;
+import main.java.project.material.Material;
 import main.java.project.water.SparklingWater;
 
 
