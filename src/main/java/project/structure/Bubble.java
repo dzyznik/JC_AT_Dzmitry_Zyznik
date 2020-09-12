@@ -1,4 +1,4 @@
-package main.java.project.bubbles;
+package main.java.project.structure;
 
 //Bubble:
 //        ------ + содеждит приватные поля double volume = 03, String gas;
