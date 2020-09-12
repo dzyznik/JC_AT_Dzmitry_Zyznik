@@ -1,6 +1,6 @@
 package main.java.project.runner;
 
-import main.java.project.bottle.Bottle;
+import main.java.project.boxing.Bottle;
 
 public class Runner {
     public static void main(String[] args) {

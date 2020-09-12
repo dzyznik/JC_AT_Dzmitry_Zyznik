@@ -1,6 +1,9 @@
-package main.java.project.bottle;
+package main.java.project.boxing;
 
-import main.java.project.bubbles.Bubble;
+import main.java.project.interfaces.Containable;
+import main.java.project.interfaces.Transformable;
+import main.java.project.structure.Bubble;
+import main.java.project.material.Material;
 import main.java.project.water.SparklingWater;
 
 
@@ -11,7 +14,7 @@ import main.java.project.water.SparklingWater;
 //------ + есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке
 //------ + есть публичный метод SparklingWater getWater() возвращающий обьект воды
 //------ + есть публичный метод setWater(SparklingWater water) добавляющий новый обьект воды
-public class Bottle {
+public class Bottle extends Vessel implements Containable {
 
 
     private double volume;
@@ -29,9 +32,41 @@ public class Bottle {
         System.out.println("New bottle is created");
     }
 
+    public Bottle(double volume, double diameter, int weight, Material material) {
+        setVolume(volume);
+        setDiameter(diameter);
+        setWeight(weight);
+        setMaterial(material);
+    }
+
+    @Override
+    public void addStuff(Transformable stuff) {
+
+    }
+
+    @Override
+    public Transformable removeStuff() {
+        return null;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return false;
+    }
+
+    @Override
+    public int getFreeSpace() {
+        return 0;
+    }
+
     public void open() {
         water.setOpened(true);
         System.out.println("Bottle is opened");
+    }
+
+    @Override
+    public void close() {
+
     }
 
     public void closed() {

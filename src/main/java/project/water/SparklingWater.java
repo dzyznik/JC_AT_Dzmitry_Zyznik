@@ -1,6 +1,6 @@
 package main.java.project.water;
 
-import main.java.project.bubbles.Bubble;
+import main.java.project.structure.Bubble;
 
 
 //SparklingWater:
