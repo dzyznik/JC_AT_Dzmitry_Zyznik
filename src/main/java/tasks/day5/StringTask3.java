@@ -16,83 +16,46 @@ public class StringTask3 {
         for (int i = 0; i < arrayLog.length; i++) {
             String[] med = arrayLog[i].split(" ");
             arrayLogSecond[i][0] = med[1];
-            arrayLogSecond[i][0] = med[2];
+            arrayLogSecond[i][1] = med[2];
         }
 
         Object[][] finalLog = new Object[arrayLogSecond.length][3];
 
         int position = 0;
+        boolean next;
 
         for (int i = 0; i < arrayLog.length; i++) {
+            next = false;
             for (Object[] el : finalLog) {
-                if (null != finalLog[i][0] && finalLog[i][0].equals(arrayLogSecond[i][0])) {
-                    if (finalLog[i][0].equals(arrayLogSecond[i][0])) {
-                        if (arrayLogSecond[i][1].equalsIgnoreCase("granted")) {
-                            int x = (int) finalLog[i][1];
-                            x += 1;
-                            finalLog[i][1] = x;
-                        } else {
-                            int x = (int) finalLog[i][1];
-                            x += 1;
-                            finalLog[i][2] = x;
-                        }
-                        break;
-                    }
-            }
-                if (null != finalLog[i][0] && finalLog[i][0].equals(arrayLogSecond[i][0])) {
-                    if (finalLog[i][0].equals(arrayLogSecond[i][0])) {
-                        if (arrayLogSecond[i][1].equalsIgnoreCase("granted")) {
-                            int x = (int) finalLog[i][1];
-                            x += 1;
-                            finalLog[i][1] = x;
-                        } else {
-                            int x = (int) finalLog[i][1];
-                            x += 1;
-                            finalLog[i][2] = x;
-                        }
+                if (null != el[0] && ((String) el[0]).equalsIgnoreCase(arrayLogSecond[i][0])) {
+                    if (arrayLogSecond[i][1].equalsIgnoreCase("granted")) {
+                        int x = (int) el[1];
+                        x += 1;
+                        el[1] = x;
                     } else {
-                        finalLog[position][0]  = arrayLogSecond[i][0];
-//                        el[0] = arrayLogSecond[i][0];
-                        if (arrayLogSecond[i][1].equalsIgnoreCase("granted")) {
-                           finalLog[position][1] = 1;
-                           finalLog[position][2] = 0;
-                        } else {
-                            finalLog[position][1] = 0;
-                            finalLog[position][2] = 1;
-                        }
-                        position ++;
+                        int x = (int) el[2];
+                        x += 1;
+                        el[2] = x;
                     }
+                    next = true;
                 }
-//            }
-
-                for (Object[] el : finalLog) {
-                    System.out.println(String.format("ip %s: ok - %s, failed - %s", el[0], el[1], el[3]));
-                }
-
             }
+            if (next) {
+                continue;
+            }
+            finalLog[position][0] = arrayLogSecond[i][0];
+            if (arrayLogSecond[i][1].equalsIgnoreCase("granted")){
+                finalLog[position][1] = 1;
+                finalLog[position][2] = 0;
+            } else {
+                finalLog[position][1] = 0;
+                finalLog[position][2] = 1;
+            }
+            position++;
+        }
+
+        for (Object[] el : finalLog) {
+            System.out.printf("ip %s: ok - %s, failed - %s%n", el[0], el[1], el[2]);
         }
     }
-
-
-//        System.out.println(arrayLog.length);
-
-
-//            for (int i = 1; i < arrayLog.length - 1; i = i + 3) {
-//                for (int j = i + 3; j < arrayLog.length - 1; j = j + 3){
-//                    if (arrayLog[i].equals(arrayLog[j])){
-//                        if (arrayLog[i + 1].equals("granted")) {
-//                            String ok = ("ip " + arrayLog[i] + ":" + " ok");
-//                        } else {
-//                            String failed = ("ip " + arrayLog[i] + ":" + " failed");
-//                        }
-//                    }
-//                }
-//                if (arrayLog[i + 1].equals("granted")) {
-//                    String ok = ("ip " + arrayLog[i] + ":" + " ok");
-//                    System.out.println(ok);
-//                } else {
-//                    String failed = ("ip " + arrayLog[i] + ":" + " failed");
-//                    System.out.println(failed);
-//                }
-//            }
-
+}
