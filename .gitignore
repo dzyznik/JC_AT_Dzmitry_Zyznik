@@ -4,4 +4,4 @@
 .DS_Store
 *.iml
 *.gitignore
-*.txt
+/text.txt
