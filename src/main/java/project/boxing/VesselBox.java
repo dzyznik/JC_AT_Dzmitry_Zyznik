@@ -30,6 +30,7 @@ public class VesselBox<T> extends Vessel {
     public void add(T o){
         if (currentPosition < container.length){
             container[currentPosition++] = o;
+            System.out.println(container[0]);
         }
     }
 }
