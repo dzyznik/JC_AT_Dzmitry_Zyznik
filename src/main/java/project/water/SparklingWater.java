@@ -47,24 +47,24 @@ public class SparklingWater extends Water {
 
 
     public void checkIsOpened() {
-        Thread thread = new Thread(() -> {
-            while (!isOpened) {
-                System.out.println("Bottle is closed...");
+        Thread thread = new Thread() {
+            public void run() {
+                while (!isOpened) {
+                    System.out.println("Bottle is closed...");
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
                 try {
-                    Thread.sleep(2000);
+                    degas();
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            try {
-                {
-                    degas();
-                }
-
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        });
+        };
         thread.start();
     }
 
