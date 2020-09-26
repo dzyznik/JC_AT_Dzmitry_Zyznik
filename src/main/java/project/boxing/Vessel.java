@@ -2,12 +2,6 @@ package main.java.project.boxing;
 
 import main.java.project.material.Material;
 
-//- each Vessel has:
-//        -- private double volume;
-//        -- private double diameter;
-//        -- private int weight;
-//        -- private Material material;
-//        -- all field are set in costructor
 public abstract class Vessel {
     private double volume;
     private double diameter;

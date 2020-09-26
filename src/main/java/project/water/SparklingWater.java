@@ -1,32 +1,14 @@
 package main.java.project.water;
 
+import main.java.project.boxing.Bottle;
 import main.java.project.structure.Bubble;
 
-
-//SparklingWater:
-//------ + наследуется от Water
-//------ + содеждит приватные поля boolean isOpened, Bubble[] bubbles
-//------ + содержит конструктор SparklingWater(), который вызывает внутренний метод isOpened();
-//------ + есть публичный метод void pump(Bubble[] bubbles), который сетает массив из пузырьков в воду
-//------ + есть публичный метод void setOpened(boolean isOpened), который меняет состояние воды на "открытое"
-//------ + есть публичный метод void checkIsOpened(), который в новом потоке проверят состояние воды на "открытость" и в случае, если она открыта запускает метод degas()
-//------ + есть приватный метод degas(), который каждую секунду выпускает по партии пузырьков из рассчета 10 + 5 * температура_воды
-//------ + есть публичный метод boolean isSparkle(), возвращающий true если в воде еще есть пузырьки газа
 public class SparklingWater extends Water {
     private boolean isOpened;
     private Bubble[] bubbles;
-    private boolean warmWater;
-
-    public void setWarmWater(boolean warmWater) {
-        this.warmWater = warmWater;
-    }
-
-    public SparklingWater(String color, String transparency, String smell, int temperature) {
-        this.setColor(color);
-    }
 
     public SparklingWater() {
-        isOpened();
+//        checkIsOpened();
     }
 
     private void isOpened() {
@@ -37,12 +19,13 @@ public class SparklingWater extends Water {
         for (int i = 0; i < bubbles.length; i++) {
             this.bubbles[i] = new Bubble("CO2");
         }
+        System.out.println("Bubbles are pumped in water");
 
     }
 
     public void setOpened(boolean isOpened) {
         this.isOpened = isOpened;
-        checkIsOpened();
+        System.out.println("Bottle is opened");
     }
 
 
@@ -59,7 +42,6 @@ public class SparklingWater extends Water {
                 }
                 try {
                     degas();
-
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -70,34 +52,29 @@ public class SparklingWater extends Water {
 
 
     private void degas() throws InterruptedException {
-        int time = 0;
-        while (this.bubbles.length > 0 && this.isOpened) {
-            if (this.warmWater && this.getTemperature() < 41) {
-                time++;
-                if (time > 60) {
-                    int temperature = this.getTemperature();
-                    temperature++;
-                    this.setTemperature(temperature);
-                    System.out.println("Temperature is set to: " + temperature);
-                    time = 0;
+            while (this.bubbles.length > 0 && this.isOpened) {
+//                Bottle warm = new Bottle();
+//                warm.warm(this.getTemperature());
+                int count = 0;
+                for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.length; i++) {
+                    count++;
+                    new Bubble("CO2").cramp();
+                    this.bubbles = new Bubble[this.bubbles.length - 1];
                 }
-            }
-            int count = 0;
-            for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.length; i++) {
-                count++;
-                new Bubble("CO2").cramp();
-                this.bubbles = new Bubble[this.bubbles.length - 1];
-            }
-            if (this.bubbles.length > 0) {
+                System.out.println("Bubbles were pumped in bottle №" + " : " + count);
                 isSparkle();
+                Thread.sleep(1000);
             }
-            System.out.println("Bubbles were pumped in bottle №" + " : " + count);
-            System.out.println("Bubbles left in bottle №" + " : " + this.bubbles.length);
-            Thread.sleep(1000);
         }
-    }
 
     public boolean isSparkle() {
-        return true;
+        if (this.bubbles.length > 0){
+            System.out.println("Bubbles left in bottle: " + this.bubbles.length);
+            return true;
+        }
+        else {
+            System.out.println("There are no bubbles in bottle");
+            return false;
+        }
     }
 }

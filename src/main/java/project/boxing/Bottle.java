@@ -5,31 +5,18 @@ import main.java.project.interfaces.Transformable;
 import main.java.project.structure.Bubble;
 import main.java.project.material.Material;
 import main.java.project.water.SparklingWater;
+import main.java.project.water.Water;
 
-
-//Bottle:
-//------+ содеждит приватные поля double volume, SparklingWater water
-//------ + содержит конструктор Bottle(double volume), в котором бутылка заполняется массивом из пузырьков из рассчета 10000 на каждый литр
-//------ + есть публичный метод void open(), который меняет состояние воды в "открытое" (приблизительно, как this.water.setOpened(true);)
-//------ + есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке
-//------ + есть публичный метод SparklingWater getWater() возвращающий обьект воды
-//------ + есть публичный метод setWater(SparklingWater water) добавляющий новый обьект воды
 public class Bottle extends Vessel implements Containable {
 
 
     private double volume;
     private SparklingWater water;
 
+
+
     public double getVolume() {
         return volume;
-    }
-
-    public Bottle(double volume) {
-        this.volume = volume;
-        Bubble[] b = new Bubble[(int) (this.volume * 10000)];
-        water = new SparklingWater();
-        water.pump(b);
-        System.out.println("New bottle is created");
     }
 
     public Bottle(double volume, double diameter, int weight, Material material) {
@@ -37,6 +24,11 @@ public class Bottle extends Vessel implements Containable {
         setDiameter(diameter);
         setWeight(weight);
         setMaterial(material);
+        Bubble[] b = new Bubble[(int) (this.volume * 10000)];
+        water = new SparklingWater();
+        water.pump(b);
+        System.out.println("New bottle is created");
+
     }
 
     @Override
@@ -61,7 +53,6 @@ public class Bottle extends Vessel implements Containable {
 
     public void open() {
         water.setOpened(true);
-        System.out.println("Bottle is opened");
     }
 
     @Override
@@ -75,10 +66,21 @@ public class Bottle extends Vessel implements Containable {
     }
 
 
-    public void warm(int temperature) {
-        water.setTemperature(temperature);
-        System.out.println("Temperature is set to " + temperature);
-    }
+//    public void warm(int temperature) {
+//        int time = 0;
+//        while (warm) {
+//            if (water.getTemperature() < 41) {
+//                time++;
+//                if (time > 2) {
+//                    temperature = water.getTemperature();
+//                    temperature++;
+//                    water.setTemperature(temperature);
+//                    System.out.println("Temperature is set to: " + temperature);
+//                    time = 0;
+//                }
+//            }
+//        }
+//    }
 
     public void water(String color, String transparency, String smell, int temperature) {
         water.setColor(color);
@@ -91,12 +93,6 @@ public class Bottle extends Vessel implements Containable {
         System.out.println("Temperature is set to " + temperature);
     }
 
-    public void warmWater(boolean warmWater) {
-        water.setWarmWater(warmWater);
-        if (warmWater) {
-            System.out.println("Bottle is started warming");
-        }
-    }
 
     public SparklingWater getWater() {
         return water;

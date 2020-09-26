@@ -3,7 +3,7 @@ package main.java.project.water;
 import main.java.project.interfaces.Transformable;
 
 
-public class Water implements Transformable {
+public abstract class Water implements Transformable {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";

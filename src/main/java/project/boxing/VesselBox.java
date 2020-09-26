@@ -30,31 +30,7 @@ public class VesselBox<T> extends Vessel {
     public void add(T o){
         if (currentPosition < container.length){
             container[currentPosition++] = o;
-            System.out.println(container[0]);
         }
     }
 }
-//    public T[] box;
-//    public int currentPosition;
-//
-//    public VesselBox(){
-//        box = (T[]) new Object[9];
-//        currentPosition = 0;
-//    }
-//
-//    public void add(T o){
-//        if (currentPosition < 10){
-//            box[currentPosition++] = o;
-//        }
-//    }
-//
-//    public void CreateBox24(){
-//        box = (T[]) new Object[24];
-//        currentPosition = 0;
-//    }
-//
-//    public void CreateBox36(){
-//        box = (T[]) new Object[36];
-//        currentPosition = 0;
-//    }
-//}
+

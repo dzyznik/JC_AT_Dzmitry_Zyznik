@@ -1,32 +1,37 @@
 package main.java.project.warehouse;
 
-import main.java.project.boxing.Bottle;
-import main.java.project.boxing.Cup;
-import main.java.project.boxing.VesselBox;
-import main.java.project.material.Glass;
-import main.java.project.material.Plastic;
 
+import main.java.project.boxing.*;
+import main.java.project.material.Material;
+
+import java.io.IOException;
 
 public class Warehouse {
-    public static void main(String[] args) {
-        VesselBox<Cup> boxWithCup = new VesselBox<>(9);
-        Glass glass = new Glass(56, "Black", 1.2);
-        Cup cup = new Cup(0.2, 5, 150, glass);
-        System.out.println(boxWithCup.length());
-        for (int i = 0; i < boxWithCup.length(); i++) {
-            boxWithCup.add(cup);
-        }
+    String boxName;
 
-        VesselBox<Bottle> boxWithBottles = new VesselBox<>(24);
-        Plastic plastic = new Plastic(40, "Green", 0.5);
-        Bottle bottle = new Bottle(0.5, 2, 150, plastic);
-        System.out.println(boxWithBottles.length());
+    public void warehouseBottle (String boxName,int count, Bottle bottle) throws IOException {
+        this.boxName = boxName;
+        VesselBox <Bottle> boxWithBottles = new VesselBox<>(count);
         for (int i = 0; i < boxWithBottles.length(); i++) {
             boxWithBottles.add(bottle);
         }
+        System.out.println("Box with " + boxWithBottles.length() + " bottles created");
+        Stocktaking stocktaking = new Stocktaking(boxWithBottles, boxName);
+    }
+
+    public void warehouseCups (String boxName,int count, Cup cup) throws IOException {
+        this.boxName = boxName;
+        VesselBox <Cup> boxWithCups = new VesselBox<>(count);
+        for (int i = 0; i < boxWithCups.length(); i++) {
+            boxWithCups.add(cup);
+        }
+        System.out.println("Box with " + boxWithCups.length() + " cups created");
+        Stocktaking stocktaking = new Stocktaking(boxWithCups, boxName);
+    }
+
 
         }
-    }
+
 
 
 
