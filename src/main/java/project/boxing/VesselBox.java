@@ -1,6 +1,8 @@
 package main.java.project.boxing;
 
-public class VesselBox<T> extends Vessel {
+import java.io.Serializable;
+
+public class VesselBox<T> extends Vessel implements Serializable {
     private T[] container;
     private int currentPosition;
 

@@ -3,7 +3,9 @@ package main.java.project.water;
 import main.java.project.boxing.Bottle;
 import main.java.project.structure.Bubble;
 
-public class SparklingWater extends Water {
+import java.io.Serializable;
+
+public class SparklingWater extends Water implements Serializable {
     private boolean isOpened;
     private Bubble[] bubbles;
 

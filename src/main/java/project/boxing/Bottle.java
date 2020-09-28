@@ -7,7 +7,9 @@ import main.java.project.material.Material;
 import main.java.project.water.SparklingWater;
 import main.java.project.water.Water;
 
-public class Bottle extends Vessel implements Containable {
+import java.io.Serializable;
+
+public class Bottle extends Vessel implements Containable, Serializable {
 
 
     private double volume;
