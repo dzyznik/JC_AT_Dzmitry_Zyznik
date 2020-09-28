@@ -10,7 +10,18 @@ public class SparklingWater extends Water implements Serializable {
     private Bubble[] bubbles;
 
     public SparklingWater() {
-//        checkIsOpened();
+        isOpened();
+    }
+
+    public SparklingWater(String color, String transparency, String smell, int temperature) {
+        setColor(color);
+        setTransparency(transparency);
+        setSmell(smell);
+        setTemperature(temperature);
+        System.out.println("Color is set to " + color);
+        System.out.println("Transparency is set to " + transparency);
+        System.out.println("Smell is set to " + smell);
+        System.out.println("Temperature is set to " + temperature);
     }
 
     private void isOpened() {
@@ -27,7 +38,6 @@ public class SparklingWater extends Water implements Serializable {
 
     public void setOpened(boolean isOpened) {
         this.isOpened = isOpened;
-        System.out.println("Bottle is opened");
     }
 
 
@@ -55,8 +65,6 @@ public class SparklingWater extends Water implements Serializable {
 
     private void degas() throws InterruptedException {
             while (this.bubbles.length > 0 && this.isOpened) {
-//                Bottle warm = new Bottle();
-//                warm.warm(this.getTemperature());
                 int count = 0;
                 for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.length; i++) {
                     count++;

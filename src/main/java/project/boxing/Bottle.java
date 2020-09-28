@@ -21,16 +21,18 @@ public class Bottle extends Vessel implements Containable, Serializable {
         return volume;
     }
 
-    public Bottle(double volume, double diameter, int weight, Material material) {
+    public Bottle(double volume, double diameter, int weight, Material material, SparklingWater water) {
+        this.volume = volume;
         setVolume(volume);
         setDiameter(diameter);
         setWeight(weight);
         setMaterial(material);
         Bubble[] b = new Bubble[(int) (this.volume * 10000)];
-        water = new SparklingWater();
         water.pump(b);
         System.out.println("New bottle is created");
-
+        this.water = water;
+        setWater(water);
+        water.checkIsOpened();
     }
 
     @Override
@@ -55,6 +57,7 @@ public class Bottle extends Vessel implements Containable, Serializable {
 
     public void open() {
         water.setOpened(true);
+        System.out.println("Bottle is opened");
     }
 
     @Override
@@ -68,31 +71,17 @@ public class Bottle extends Vessel implements Containable, Serializable {
     }
 
 
-//    public void warm(int temperature) {
-//        int time = 0;
-//        while (warm) {
-//            if (water.getTemperature() < 41) {
-//                time++;
-//                if (time > 2) {
-//                    temperature = water.getTemperature();
-//                    temperature++;
-//                    water.setTemperature(temperature);
-//                    System.out.println("Temperature is set to: " + temperature);
-//                    time = 0;
-//                }
-//            }
-//        }
-//    }
-
-    public void water(String color, String transparency, String smell, int temperature) {
-        water.setColor(color);
-        water.setTransparency(transparency);
-        water.setSmell(smell);
+    public void warm(int temperature) throws InterruptedException {
         water.setTemperature(temperature);
-        System.out.println("Color is set to " + color);
-        System.out.println("Transparency is set to " + transparency);
-        System.out.println("Smell is set to " + smell);
-        System.out.println("Temperature is set to " + temperature);
+        while (water.getTemperature() < 42) {
+            if (water.getTemperature() < 41) {
+                temperature = water.getTemperature();
+                temperature++;
+                water.setTemperature(temperature);
+                System.out.println("Temperature is set to: " + temperature);
+            }
+            Thread.sleep(10000);
+        }
     }
 
 
