@@ -32,7 +32,7 @@ public class Bottle extends Vessel implements Containable, Serializable {
         System.out.println("New bottle is created");
         this.water = water;
         setWater(water);
-        water.checkIsOpened();
+//        water.checkIsOpened();
     }
 
     @Override

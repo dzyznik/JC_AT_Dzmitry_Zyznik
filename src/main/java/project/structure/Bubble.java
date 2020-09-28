@@ -1,6 +1,8 @@
 package main.java.project.structure;
 
-public class Bubble {
+import java.io.Serializable;
+
+public class Bubble implements Serializable {
     private static final double VOLUME = 0.3;
     private String gas;
 

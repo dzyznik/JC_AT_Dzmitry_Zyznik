@@ -6,6 +6,8 @@ public class VesselBox<T> extends Vessel implements Serializable {
     private T[] container;
     private int currentPosition;
 
+    private String type;
+
     public VesselBox(int i){
         if (i == 9) {
             container = (T[]) new Object[9];
@@ -33,6 +35,12 @@ public class VesselBox<T> extends Vessel implements Serializable {
         if (currentPosition < container.length){
             container[currentPosition++] = o;
         }
+        this.type = o.getClass().getName();
+        System.out.println(o.getClass().getName());
+    }
+
+    public String getType() {
+        return type;
     }
 }
 
