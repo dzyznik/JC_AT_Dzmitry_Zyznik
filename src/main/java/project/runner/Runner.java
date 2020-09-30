@@ -10,11 +10,18 @@ import main.java.project.water.SparklingWater;
 import main.java.project.water.Water;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Runner {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         SparklingWater sprite = new SparklingWater("Green", "Yes", "Sweet", 5);
         Material glass = new Glass(56, "Black", 1.2);
+        List <Bottle> bottleList = new ArrayList();
+        for (int i = 0; i < 10; i++) {
+            bottleList.add(new Bottle(1, 0.5, 100, glass, sprite));
+        }
+
         Bottle bottle1 = new Bottle(1, 0.5, 100, glass, sprite);
         Bottle bottle2 = new Bottle(1, 0.5, 100, glass, sprite);
         Bottle bottle3 = new Bottle(1, 0.5, 100, glass, sprite);
