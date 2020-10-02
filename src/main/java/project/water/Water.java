@@ -2,10 +2,8 @@ package main.java.project.water;
 
 import main.java.project.interfaces.Transformable;
 
-//Water:
-//------ + содеждит приватные поля String color = "no", String transparency = "transparent", String smell = "no", int temperature = 0
-//------ + содеждит геттеры и сеттеры ко всем полям
-public class Water implements Transformable {
+
+public abstract class Water implements Transformable {
     private String color = "no";
     private String transparency = "transparent";
     private String smell = "no";

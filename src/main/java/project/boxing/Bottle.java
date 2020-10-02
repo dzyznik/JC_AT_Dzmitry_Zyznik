@@ -5,52 +5,55 @@ import main.java.project.interfaces.Transformable;
 import main.java.project.structure.Bubble;
 import main.java.project.material.Material;
 import main.java.project.water.SparklingWater;
+import main.java.project.water.Water;
 
+import java.io.Serializable;
 
-//Bottle:
-//------+ содеждит приватные поля double volume, SparklingWater water
-//------ + содержит конструктор Bottle(double volume), в котором бутылка заполняется массивом из пузырьков из рассчета 10000 на каждый литр
-//------ + есть публичный метод void open(), который меняет состояние воды в "открытое" (приблизительно, как this.water.setOpened(true);)
-//------ + есть публичный метод void warm(int temperature), который устанавливает температуру воды в бутылке
-//------ + есть публичный метод SparklingWater getWater() возвращающий обьект воды
-//------ + есть публичный метод setWater(SparklingWater water) добавляющий новый обьект воды
-public class Bottle extends Vessel implements Containable {
+public class Bottle extends Vessel implements Containable, Serializable {
 
 
     private double volume;
     private SparklingWater water;
 
+
+
     public double getVolume() {
         return volume;
     }
 
-    public Bottle(double volume) {
+    public Bottle(double volume, double diameter, int weight, Material material,SparklingWater water) {
         this.volume = volume;
-        Bubble[] b = new Bubble[(int) (this.volume * 10000)];
-        water = new SparklingWater();
-        water.pump(b);
-        System.out.println("New bottle is created");
-    }
-
-    public Bottle(double volume, double diameter, int weight, Material material) {
         setVolume(volume);
         setDiameter(diameter);
         setWeight(weight);
         setMaterial(material);
+        Bubble[] b = new Bubble[(int) (this.volume * 10000)];
+        water.pump(b);
+        System.out.println("New bottle is created");
+        addStuff(water);
+        water.checkIsOpened();
     }
+
+
 
     @Override
     public void addStuff(Transformable stuff) {
-
+        this.water = (SparklingWater) stuff;
+        setWater(water);
     }
 
     @Override
     public Transformable removeStuff() {
+        setWater(null);
         return null;
     }
 
     @Override
     public boolean isEmpty() {
+        if (this.water != null){
+            return true;
+        }
+        else
         return false;
     }
 
@@ -59,6 +62,7 @@ public class Bottle extends Vessel implements Containable {
         return 0;
     }
 
+    @Override
     public void open() {
         water.setOpened(true);
         System.out.println("Bottle is opened");
@@ -66,37 +70,24 @@ public class Bottle extends Vessel implements Containable {
 
     @Override
     public void close() {
-
-    }
-
-    public void closed() {
         water.setOpened(false);
         System.out.println("Bottle is closed");
+
     }
 
-
-    public void warm(int temperature) {
+    public void warm(int temperature) throws InterruptedException {
         water.setTemperature(temperature);
-        System.out.println("Temperature is set to " + temperature);
-    }
-
-    public void water(String color, String transparency, String smell, int temperature) {
-        water.setColor(color);
-        water.setTransparency(transparency);
-        water.setSmell(smell);
-        water.setTemperature(temperature);
-        System.out.println("Color is set to " + color);
-        System.out.println("Transparency is set to " + transparency);
-        System.out.println("Smell is set to " + smell);
-        System.out.println("Temperature is set to " + temperature);
-    }
-
-    public void warmWater(boolean warmWater) {
-        water.setWarmWater(warmWater);
-        if (warmWater) {
-            System.out.println("Bottle is started warming");
+        while (water.getTemperature() < 42) {
+            if (water.getTemperature() < 41) {
+                temperature = water.getTemperature();
+                temperature++;
+                water.setTemperature(temperature);
+                System.out.println("Temperature is set to: " + temperature);
+            }
+            Thread.sleep(10000);
         }
     }
+
 
     public SparklingWater getWater() {
         return water;

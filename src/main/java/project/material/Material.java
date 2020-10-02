@@ -1,11 +1,9 @@
 package main.java.project.material;
 
-//- abstract class Material (extending classes Glass, Plastic, Metal)
-// -- private double thermalConductivity;
-// -- private String color;
-// -- private double density;
-// -- all field are set in costructor
-public abstract class Material {
+
+import java.io.Serializable;
+
+public abstract class Material implements Serializable {
     private double thermalConductivity;
     private String color;
     private double density;
