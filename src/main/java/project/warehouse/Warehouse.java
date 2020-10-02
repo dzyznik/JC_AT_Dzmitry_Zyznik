@@ -23,7 +23,7 @@ public class Warehouse {
         boxWithBottles.add(bottle7);
         boxWithBottles.add(bottle8);
         boxWithBottles.add(bottle9);
-        System.out.println("Box with " + boxWithBottles.length() + " bottles created");
+        System.out.println("Box with " + boxWithBottles.length() + " " + boxWithBottles.getType());
         Stocktaking stocktaking = new Stocktaking(boxWithBottles, boxName);
     }
 
@@ -39,7 +39,7 @@ public class Warehouse {
         boxWithCups.add(cup7);
         boxWithCups.add(cup8);
         boxWithCups.add(cup9);
-        System.out.println("Box with " + boxWithCups.length() + " cups created");
+        System.out.println("Box with " + boxWithCups.length() + " " + boxWithCups.getType());
         Stocktaking stocktaking = new Stocktaking(boxWithCups, boxName);
     }
 

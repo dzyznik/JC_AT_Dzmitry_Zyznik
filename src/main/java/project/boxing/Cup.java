@@ -10,6 +10,7 @@ public class Cup extends Vessel implements Containable {
         setDiameter(diameter);
         setWeight(weight);
         setMaterial(material);
+        System.out.println("New cup is created");
     }
 
     @Override

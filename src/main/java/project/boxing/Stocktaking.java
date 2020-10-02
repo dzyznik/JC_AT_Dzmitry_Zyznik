@@ -16,9 +16,8 @@ public class Stocktaking {
         ObjectInputStream ois = new ObjectInputStream(fis);
         VesselBox vesselBox1 = (VesselBox) ois.readObject();
         System.out.println("File was read");
-        System.out.println("I am a box with " + vesselBox1.length() + " " + vesselBox1.getType());
-//        System.out.println("Size of box is: " + vesselBox1.length());
-//        System.out.println("Type of stored data " + vesselBox1.getType());
+        System.out.println("Size of box is: " + vesselBox1.length());
+        System.out.println("Type of stored data: " + vesselBox1.getType());
     }
 }
 

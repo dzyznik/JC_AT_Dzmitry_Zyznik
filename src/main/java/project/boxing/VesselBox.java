@@ -37,7 +37,7 @@ public class VesselBox<T> extends Vessel implements Serializable {
             container[currentPosition++] = o;
         }
         this.type = o.getClass().getSimpleName();
-        System.out.println(o.getClass().getSimpleName());
+        System.out.println("Add " + o.getClass().getSimpleName() + " in box");
     }
 
     public String getType() {
