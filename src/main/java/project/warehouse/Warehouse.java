@@ -27,12 +27,18 @@ public class Warehouse {
         Stocktaking stocktaking = new Stocktaking(boxWithBottles, boxName);
     }
 
-    public void warehouseCups(String boxName, int count, Cup cup) throws IOException, ClassNotFoundException {
+    public void warehouseCups(String boxName, int count, Cup cup1, Cup cup2, Cup cup3, Cup cup4, Cup cup5, Cup cup6, Cup cup7, Cup cup8, Cup cup9) throws IOException, ClassNotFoundException {
         this.boxName = boxName;
         VesselBox<Cup> boxWithCups = new VesselBox<>(count);
-        for (int i = 0; i < boxWithCups.length(); i++) {
-            boxWithCups.add(cup);
-        }
+        boxWithCups.add(cup1);
+        boxWithCups.add(cup2);
+        boxWithCups.add(cup3);
+        boxWithCups.add(cup4);
+        boxWithCups.add(cup5);
+        boxWithCups.add(cup6);
+        boxWithCups.add(cup7);
+        boxWithCups.add(cup8);
+        boxWithCups.add(cup9);
         System.out.println("Box with " + boxWithCups.length() + " cups created");
         Stocktaking stocktaking = new Stocktaking(boxWithCups, boxName);
     }
