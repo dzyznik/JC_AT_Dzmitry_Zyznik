@@ -18,18 +18,18 @@ public class Runner {
         SparklingWater sprite = new SparklingWater("Green", "Yes", "Sweet", 5);
         Material glass = new Glass(56, "Black", 1.2);
         Bottle bottle1 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle2 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle3 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle4 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle5 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle6 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle7 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle8 = new Bottle(1, 0.5, 100, glass, sprite);
-        Bottle bottle9 = new Bottle(1, 0.5, 100, glass, sprite);
-        Warehouse boxWithBottle = new Warehouse();
-        boxWithBottle.warehouseBottle("boxWithBottles", 9, bottle1, bottle2, bottle3, bottle4, bottle5, bottle6, bottle7, bottle8, bottle9);
-//        bottle1.open();
-//        bottle1.warm(5);
+//        Bottle bottle2 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle3 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle4 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle5 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle6 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle7 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle8 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Bottle bottle9 = new Bottle(1, 0.5, 100, glass, sprite);
+//        Warehouse boxWithBottle = new Warehouse();
+//        boxWithBottle.warehouseBottle("boxWithBottles", 9, bottle1, bottle2, bottle3, bottle4, bottle5, bottle6, bottle7, bottle8, bottle9);
+        bottle1.open();
+        bottle1.warm(5);
 
 
 
