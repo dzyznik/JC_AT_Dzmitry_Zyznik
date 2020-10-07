@@ -33,19 +33,19 @@ public class Runner {
 
 
 
-        Material plastic = new Plastic(23, "Green", 2);
-        Cup cup1 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup2 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup3 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup4 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup5 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup6 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup7 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup8 = new Cup(0.3, 0.1, 20, plastic);
-        Cup cup9 = new Cup(0.3, 0.1, 20, plastic);
-
-        Warehouse boxWithCups = new Warehouse();
-        boxWithCups.warehouseCups("boxWithCups",24, cup1,cup2, cup3, cup4, cup5, cup6, cup7, cup8, cup9);
+//        Material plastic = new Plastic(23, "Green", 2);
+//        Cup cup1 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup2 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup3 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup4 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup5 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup6 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup7 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup8 = new Cup(0.3, 0.1, 20, plastic);
+//        Cup cup9 = new Cup(0.3, 0.1, 20, plastic);
+//
+//        Warehouse boxWithCups = new Warehouse();
+//        boxWithCups.warehouseCups("boxWithCups",24, cup1,cup2, cup3, cup4, cup5, cup6, cup7, cup8, cup9);
 
     }
 

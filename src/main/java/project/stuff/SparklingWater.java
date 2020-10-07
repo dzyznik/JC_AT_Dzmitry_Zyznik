@@ -1,10 +1,11 @@
 package main.java.project.stuff;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class SparklingWater extends Water implements Serializable {
     private boolean isOpened;
-    private Bubble[] bubbles;
+    private List<Bubble> bubbles;
 
     public SparklingWater() {
         isOpened();
@@ -24,10 +25,10 @@ public class SparklingWater extends Water implements Serializable {
     private void isOpened() {
     }
 
-    public void pump(Bubble[] bubbles) {
+    public void pump(List<Bubble> bubbles, int bubblesCount) {
         this.bubbles = bubbles;
-        for (int i = 0; i < bubbles.length; i++) {
-            this.bubbles[i] = new Bubble("CO2");
+        for (int i = 0; i < bubblesCount; i++) {
+            this.bubbles.add(new Bubble("CO2"));
         }
         System.out.println("Bubbles are pumped in water");
 
@@ -61,12 +62,12 @@ public class SparklingWater extends Water implements Serializable {
 
 
     private void degas() throws InterruptedException {
-            while (this.bubbles.length > 0 && this.isOpened) {
+            while (this.bubbles.size() > 0 && this.isOpened) {
                 int count = 0;
-                for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.length; i++) {
+                for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.size(); i++) {
                     count++;
-                    new Bubble("CO2").cramp();
-                    this.bubbles = new Bubble[this.bubbles.length - 1];
+                    this.bubbles.get((int) i).cramp();
+                    this.bubbles.remove(this.bubbles.size() - 1);
                 }
                 System.out.println("Bubbles were pumped in bottle №" + " : " + count);
                 isSparkle();
@@ -75,8 +76,8 @@ public class SparklingWater extends Water implements Serializable {
         }
 
     public boolean isSparkle() {
-        if (this.bubbles.length > 0){
-            System.out.println("Bubbles left in bottle: " + this.bubbles.length);
+        if (this.bubbles.size() > 0){
+            System.out.println("Bubbles left in bottle: " + this.bubbles.size());
             return true;
         }
         else {

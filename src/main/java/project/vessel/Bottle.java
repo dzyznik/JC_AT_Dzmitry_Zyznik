@@ -6,6 +6,8 @@ import main.java.project.material.Material;
 import main.java.project.stuff.SparklingWater;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Bottle extends Vessel implements Containable, Serializable {
 
@@ -25,8 +27,8 @@ public class Bottle extends Vessel implements Containable, Serializable {
         setDiameter(diameter);
         setWeight(weight);
         setMaterial(material);
-        Bubble[] b = new Bubble[(int) (this.volume * 10000)];
-        water.pump(b);
+        List <Bubble> bubbles = new ArrayList();
+        water.pump(bubbles, (int) (volume * 10000));
         System.out.println("New bottle is created");
         addStuff(water);
         water.checkIsOpened();
