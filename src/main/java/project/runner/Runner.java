@@ -25,8 +25,8 @@ public class Runner {
 //        Bottle bottle9 = new Bottle(1, 0.5, 100, glass, sprite);
 //        Warehouse boxWithBottle = new Warehouse();
 //        boxWithBottle.warehouseBottle("boxWithBottles", 9, bottle1, bottle2, bottle3, bottle4, bottle5, bottle6, bottle7, bottle8, bottle9);
+        bottle1.getWater().warm(7);
         bottle1.open();
-        bottle1.warm(5);
 
 
 

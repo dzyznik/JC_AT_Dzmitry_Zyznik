@@ -39,6 +39,28 @@ public class SparklingWater extends Water implements Serializable {
     }
 
 
+    public void warm(int temperature) {
+        Thread thread = new Thread() {
+            public void run() {
+                setTemperature(temperature - 1);
+                while (getTemperature() < 42) {
+                    if (getTemperature() < 41) {
+                        setTemperature(getTemperature() + 1);
+                        System.out.println("Temperature is set to: " + getTemperature());
+                    }
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        thread.start();
+    }
+
+
+
     public void checkIsOpened() {
         Thread thread = new Thread() {
             public void run() {

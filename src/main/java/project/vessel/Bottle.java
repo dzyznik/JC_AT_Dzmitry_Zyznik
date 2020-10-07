@@ -75,20 +75,6 @@ public class Bottle extends Vessel implements Containable, Serializable {
 
     }
 
-    public void warm(int temperature) throws InterruptedException {
-        water.setTemperature(temperature);
-        while (water.getTemperature() < 42) {
-            if (water.getTemperature() < 41) {
-                temperature = water.getTemperature();
-                temperature++;
-                water.setTemperature(temperature);
-                System.out.println("Temperature is set to: " + temperature);
-            }
-            Thread.sleep(10000);
-        }
-    }
-
-
     public SparklingWater getWater() {
         return water;
     }

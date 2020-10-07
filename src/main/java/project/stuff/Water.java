@@ -31,7 +31,7 @@ public abstract class Water implements Transformable {
         this.smell = smell;
     }
 
-    public int getTemperature() {
+    public  int getTemperature() {
         return temperature;
     }
 
