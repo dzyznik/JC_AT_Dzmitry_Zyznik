@@ -1,7 +1,4 @@
-package main.java.project.water;
-
-import main.java.project.boxing.Bottle;
-import main.java.project.structure.Bubble;
+package main.java.project.stuff;
 
 import java.io.Serializable;
 

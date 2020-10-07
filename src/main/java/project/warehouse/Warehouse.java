@@ -1,12 +1,9 @@
 package main.java.project.warehouse;
 
 
-import main.java.project.boxing.*;
-import main.java.project.material.Material;
+import main.java.project.vessel.*;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.Arrays;
 
 public class Warehouse {
     String boxName;

@@ -1,4 +1,6 @@
-package main.java.project.boxing;
+package main.java.project.warehouse;
+
+import main.java.project.warehouse.VesselBox;
 
 import java.io.*;
 

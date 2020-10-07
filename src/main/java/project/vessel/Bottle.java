@@ -1,11 +1,9 @@
-package main.java.project.boxing;
+package main.java.project.vessel;
 
-import main.java.project.interfaces.Containable;
-import main.java.project.interfaces.Transformable;
-import main.java.project.structure.Bubble;
+import main.java.project.stuff.Transformable;
+import main.java.project.stuff.Bubble;
 import main.java.project.material.Material;
-import main.java.project.water.SparklingWater;
-import main.java.project.water.Water;
+import main.java.project.stuff.SparklingWater;
 
 import java.io.Serializable;
 

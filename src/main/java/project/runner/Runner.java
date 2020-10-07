@@ -1,17 +1,14 @@
 package main.java.project.runner;
 
-import main.java.project.boxing.Bottle;
-import main.java.project.boxing.Cup;
+import main.java.project.vessel.Bottle;
+import main.java.project.vessel.Cup;
 import main.java.project.material.Glass;
 import main.java.project.material.Material;
 import main.java.project.material.Plastic;
 import main.java.project.warehouse.Warehouse;
-import main.java.project.water.SparklingWater;
-import main.java.project.water.Water;
+import main.java.project.stuff.SparklingWater;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Runner {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {

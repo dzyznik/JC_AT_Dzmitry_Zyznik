@@ -1,4 +1,4 @@
-package main.java.project.boxing;
+package main.java.project.vessel;
 
 import main.java.project.material.Material;
 

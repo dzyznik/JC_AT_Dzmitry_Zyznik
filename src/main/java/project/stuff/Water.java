@@ -1,6 +1,4 @@
-package main.java.project.water;
-
-import main.java.project.interfaces.Transformable;
+package main.java.project.stuff;
 
 
 public abstract class Water implements Transformable {

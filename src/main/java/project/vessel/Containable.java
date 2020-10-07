@@ -1,4 +1,6 @@
-package main.java.project.interfaces;
+package main.java.project.vessel;
+
+import main.java.project.stuff.Transformable;
 
 //- interface Containable (implementing classes Bottle, Cup, Can)
 // -- void addStuff (Transformable stuff) - adds some stuff (e.g. water, sand) to Containable object
