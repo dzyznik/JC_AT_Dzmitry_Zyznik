@@ -20,9 +20,11 @@ public class Stream {
 //        System.out.println(list.stream().map(String::length).reduce((x,y) -> x + y).get());
 //        System.out.println(list.stream().mapToInt(String::length).sum());
 //        System.out.println(list.stream().map(String::length).filter(s -> s % 2 != 0).reduce((x,y) -> x + y).get());
-//        System.out.println(list.stream().map(String::length).collect(Collectors.summingInt(i -> {if (i % 2 == 0){
-//        return 0;} else return i;})));
-        System.out.println(list.stream().collect(Collectors.joining(":","<p>","</p>")));
+        System.out.println(list.stream().map(String::length).collect(Collectors.summingInt(i -> {if (i % 2 == 0){
+        return 0;} else return i;})));
+//        System.out.println(list.stream().collect(Collectors.joining(":","<p>","</p>")));
+
+
 
         }
 
