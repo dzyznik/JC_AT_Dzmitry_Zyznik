@@ -10,7 +10,7 @@ import java.util.List;
 public class Runner {
     public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         SparklingWater sprite = new SparklingWater("Green", "Yes", "Sweet", 5);
-        Material_cl glass = new Glass(56, "Black", 1.2);
+       Material_cl glass = new Glass(56, "Black", 1.2);
         List<Bottle> box = new ArrayList<>();
         for (int i = 0; i < 9; i++) {
             Bottle bottle = new Bottle(1, 0.5, 100, glass, sprite);
