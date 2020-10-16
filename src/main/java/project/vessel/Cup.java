@@ -1,13 +1,17 @@
 package main.java.project.vessel;
 
+import main.java.project.material.Material;
 import main.java.project.stuff.Transformable;
 
 public class Cup extends Vessel implements Containable {
-    public Cup(double volume, double diameter, int weight, Material_cl materialCl) {
+    private Transformable stuff;
+
+    public Cup(double volume, Material material) {
         setVolume(volume);
+        double diameter = 8.0;
         setDiameter(diameter);
-        setWeight(weight);
-        setMaterial(materialCl);
+        setMaterial(material);
+        setWeight((int) (material.getDensity() * volume / 4));
         System.out.println("New cup is created");
     }
 
@@ -27,17 +31,12 @@ public class Cup extends Vessel implements Containable {
     }
 
     @Override
-    public int getFreeSpace() {
-        return 0;
-    }
-
-    @Override
     public void open() {
 
     }
 
     @Override
-    public void close() {
+    public void warm(int temperature) {
 
     }
 }

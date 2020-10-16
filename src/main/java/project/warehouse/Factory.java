@@ -1,5 +1,6 @@
 package main.java.project.warehouse;
 
+import main.java.project.material.Material;
 import main.java.project.vessel.Vessel;
 
 import java.io.IOException;
@@ -48,7 +49,7 @@ public class Factory {
                 }
 
                 @Override
-                public void setMaterial(Material_cl material) {
+                public void setMaterial(Material material) {
                     super.setMaterial(vessel.getMaterial());
                 }
             };

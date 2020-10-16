@@ -1,12 +1,14 @@
 package main.java.project.vessel;
 
+import main.java.project.material.Material;
+
 import java.io.Serializable;
 
 public abstract class Vessel implements Serializable {
     private double volume;
     private double diameter;
     private int weight;
-    private Material_cl materialCl;
+    private Material material;
 
     public double getVolume() {
         return volume;
@@ -32,11 +34,11 @@ public abstract class Vessel implements Serializable {
         this.weight = weight;
     }
 
-    public Material_cl getMaterial() {
-        return materialCl;
+    public Material getMaterial() {
+        return material;
     }
 
-    public void setMaterial(Material_cl materialCl) {
-        this.materialCl = materialCl;
+    public void setMaterial(Material material) {
+        this.material = material;
     }
 }

@@ -9,6 +9,10 @@ public enum Material {
     private String color;
     private double density;
 
+    public double getDensity() {
+        return density;
+    }
+
     private Material(double thermalConductivity, String color, double density) {
         thermalConductivity = this.thermalConductivity;
         color = this.color;

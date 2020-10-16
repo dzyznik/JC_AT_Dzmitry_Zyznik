@@ -16,9 +16,8 @@ public interface Containable {
 
     boolean isEmpty();
 
-    int getFreeSpace();
 
     void open();
 
-    void close();
+    void warm(int temperature);
 }
