@@ -1,71 +1,33 @@
 package main.java.project.stuff;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class SparklingWater extends Water implements Serializable {
     private boolean isOpened;
     private List<Bubble> bubbles;
 
-    public SparklingWater() {
+    public SparklingWater(double volume) {
+        double bubblesCount = 10000 * volume;
+        List<Bubble> bubbles = new ArrayList<>();
+        for (int i = 0; i < bubblesCount; i++){
+            bubbles.add(new Bubble());
+        }
+        System.out.println("Pumping water with bubbles: " + bubbles.size());
+        this.bubbles = bubbles;
         isOpened();
     }
 
-    public SparklingWater(String color, String transparency, String smell, int temperature) {
-        setColor(color);
-        setTransparency(transparency);
-        setSmell(smell);
-        setTemperature(temperature);
-        System.out.println("Color is set to " + color);
-        System.out.println("Transparency is set to " + transparency);
-        System.out.println("Smell is set to " + smell);
-        System.out.println("Temperature is set to " + temperature);
+    public void setOpened() {
+        this.isOpened = true;
     }
 
     private void isOpened() {
-    }
-
-    public void pump(List<Bubble> bubbles, int bubblesCount) {
-        this.bubbles = bubbles;
-        for (int i = 0; i < bubblesCount; i++) {
-            this.bubbles.add(new Bubble("CO2"));
-        }
-        System.out.println("Bubbles are pumped in water");
-
-    }
-
-    public void setOpened(boolean isOpened) {
-        this.isOpened = isOpened;
-    }
-
-
-    public void warm(int temperature) {
-        Thread thread = new Thread() {
-            public void run() {
-                setTemperature(temperature - 1);
-                while (getTemperature() < 42) {
-                    if (getTemperature() < 41) {
-                        setTemperature(getTemperature() + 1);
-                        System.out.println("Temperature is set to: " + getTemperature());
-                    }
-                    try {
-                        Thread.sleep(10000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        };
-        thread.start();
-    }
-
-
-
-    public void checkIsOpened() {
         Thread thread = new Thread() {
             public void run() {
                 while (!isOpened) {
-                    System.out.println("Bottle is closed...");
+                    System.out.println("Bottle is closed..");
                     try {
                         Thread.sleep(2000);
                     } catch (InterruptedException e) {
@@ -84,27 +46,53 @@ public class SparklingWater extends Water implements Serializable {
 
 
     private void degas() throws InterruptedException {
-            while (this.bubbles.size() > 0 && this.isOpened) {
-                int count = 0;
-                for (double i = 0; i < ((this.getTemperature() * 5 + 10)) && i < this.bubbles.size(); i++) {
-                    count++;
-                    this.bubbles.get((int) i).cramp();
-                    this.bubbles.remove(this.bubbles.size() - 1);
-                }
-                System.out.println("Bubbles were pumped in bottle №" + " : " + count);
-                isSparkle();
-                Thread.sleep(1000);
-            }
-        }
 
-    public boolean isSparkle() {
-        if (this.bubbles.size() > 0){
-            System.out.println("Bubbles left in bottle: " + this.bubbles.size());
-            return true;
+        System.out.println("Starting degase..");
+        while (bubbles.size() != 0) {
+
+            int bunch = 10 + 5 * this.getTemperature();
+            System.out.println("bunch is: " + bunch);
+            if (bubbles.size() > bunch) {
+                for (int i = 0; i < bunch && i < bubbles.size(); i++) {
+                    bubbles.get(i).cramp();
+                    bubbles.remove(i);
+                }
+            }
+            else {
+                for (int i = 0; i < bubbles.size(); i++) {
+                    bubbles.get(i).cramp();
+                    bubbles.remove(i);
+                }
+                break;
+                }
+            Thread.sleep(1000);
         }
-        else {
-            System.out.println("There are no bubbles in bottle");
-            return false;
-        }
+        System.out.println("Bubbles length is: " + bubbles.size());
     }
+
+
+    @Override
+    public void mix() {
+
+    }
+
+//    public void warm(int temperature) {
+//        Thread thread = new Thread() {
+//            public void run() {
+//                setTemperature(temperature - 1);
+//                while (getTemperature() < 42) {
+//                    if (getTemperature() < 41) {
+//                        setTemperature(getTemperature() + 1);
+//                        System.out.println("Temperature is set to: " + getTemperature());
+//                    }
+//                    try {
+//                        Thread.sleep(10000);
+//                    } catch (InterruptedException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        };
+//        thread.start();
+//    }
 }
