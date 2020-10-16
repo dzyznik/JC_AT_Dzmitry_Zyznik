@@ -1,14 +1,13 @@
 package main.java.project.vessel;
 
 import main.java.project.stuff.Transformable;
-import main.java.project.material.Material;
 
 public class Can extends Vessel implements Containable {
-    public Can(double volume, double diameter, int weight, Material material) {
+    public Can(double volume, double diameter, int weight, Material_cl materialCl) {
         setVolume(volume);
         setDiameter(diameter);
         setWeight(weight);
-        setMaterial(material);
+        setMaterial(materialCl);
     }
 
     @Override

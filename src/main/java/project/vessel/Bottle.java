@@ -2,7 +2,6 @@ package main.java.project.vessel;
 
 import main.java.project.stuff.Transformable;
 import main.java.project.stuff.Bubble;
-import main.java.project.material.Material;
 import main.java.project.stuff.SparklingWater;
 
 import java.io.Serializable;
@@ -21,12 +20,12 @@ public class Bottle extends Vessel implements Containable, Serializable {
         return volume;
     }
 
-    public Bottle(double volume, double diameter, int weight, Material material,SparklingWater water) {
+    public Bottle(double volume, double diameter, int weight, Material_cl materialCl, SparklingWater water) {
         this.volume = volume;
         setVolume(volume);
         setDiameter(diameter);
         setWeight(weight);
-        setMaterial(material);
+        setMaterial(materialCl);
         List <Bubble> bubbles = new ArrayList();
         water.pump(bubbles, (int) (volume * 10000));
         System.out.println("New bottle is created");
