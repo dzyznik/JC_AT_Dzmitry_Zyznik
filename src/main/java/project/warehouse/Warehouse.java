@@ -6,22 +6,18 @@ public class Warehouse {
     private Map<Integer, VesselBox> stock;
 
     public void addBox(VesselBox box) {
-        int i = stock.size() + 1;
-        stock.put(i, box);
+        stock.put(box.getId(), box);
         System.out.println("Box was added");
     }
 
-    public void getBox(){
-
+    public void getBox(int id) {
+        System.out.println(stock.get(id));
     }
 
-    public void removeBox(){
-        VesselBox keyToRemove = stock.remove(stock.size()-1);
-        stock.remove(keyToRemove);
+    public void removeBox(int id) {
+        stock.remove(id);
         System.out.println("Box was removed");
     }
-
-
 
 }
 

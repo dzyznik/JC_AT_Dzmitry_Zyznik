@@ -1,62 +1,51 @@
 package main.java.project.warehouse;
 
 import main.java.project.material.Material;
-import main.java.project.vessel.Vessel;
+import main.java.project.stuff.SparklingWater;
+import main.java.project.stuff.Transformable;
+import main.java.project.vessel.*;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Factory {
-    VesselBox<Vessel> box;
-    int count;
-    Warehouse warehouse;
-    String boxName;
+    private Warehouse warehouse;
 
-    public void createVesselBox(String boxName, int count) {
-        VesselBox<Vessel> box = new VesselBox<>(count);
-        this.box = box;
-        this.count = count;
-        this.boxName = boxName;
+    public Warehouse getWarehouse() {
+        return warehouse;
     }
 
-    public void addVessels(Vessel vessel) {
-        box.add(this.count, vessel);
+    public void setWarehouse(Warehouse warehouse) {
+        this.warehouse = warehouse;
     }
 
-    public void storeBox(VesselBox box) throws IOException, ClassNotFoundException {
-        warehouse.addBox(box);
-        Stocktaking stocktaking = new Stocktaking(box, boxName);
-    }
-
-    public void createVessels(Vessel vessel, int count) {
-        List<Vessel> container = new ArrayList<>();
-        for (int i = 0; i < count; i++) {
-            Vessel vessel1 = new Vessel() {
-                @Override
-                public void setVolume(double volume) {
-                    super.setVolume(vessel.getVolume());
-                }
-
-                @Override
-                public void setDiameter(double diameter) {
-                    super.setDiameter(vessel.getDiameter());
-                }
-
-                @Override
-                public void setWeight(int weight) {
-                    super.setWeight(vessel.getWeight());
-                }
-
-                @Override
-                public void setMaterial(Material material) {
-                    super.setMaterial(vessel.getMaterial());
-                }
-            };
-            container.add(vessel1);
+    public void createVesselBox(String boxName, int capacity, double volume, Material material, Transformable stuff, Class<?> clazz){
+        List <Containable> boxContent = new ArrayList<>();
+        for (int i = 0; i < capacity; i++) {
+            boxContent.add(createVessel(volume,material,stuff,clazz));
         }
+        VesselBox box = new VesselBox(boxName, boxContent);
+    }
 
+    private Containable createVessel(double volume, Material material, Transformable stuff, Class<?> clazz){
+        if (clazz.getClass().getSimpleName().equals("Bottle")) {
+            Bottle bottle = new Bottle(volume, material);
+            bottle.addStuff(stuff);
+            return bottle;
+        }
+        if (clazz.getClass().getSimpleName().equals("Can")) {
+            Can can = new Can(volume, material);
+            can.addStuff(stuff);
+            return can;
+        }
+        if (clazz.getClass().getSimpleName().equals("Cup")) {
+            Cup cup = new Cup(volume, material);
+            cup.addStuff(stuff);
+            return cup;
+        }
+        else return null;
+    }
     }
 
 
-}
