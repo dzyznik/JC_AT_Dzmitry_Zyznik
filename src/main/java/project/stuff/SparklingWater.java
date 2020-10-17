@@ -55,13 +55,13 @@ public class SparklingWater extends Water implements Serializable {
             if (bubbles.size() > bunch) {
                 for (int i = 0; i < bunch && i < bubbles.size(); i++) {
                     bubbles.get(i).cramp();
-                    bubbles.remove(i);
+                    bubbles.remove(bubbles.size() - 1);
                 }
             }
             else {
                 for (int i = 0; i < bubbles.size(); i++) {
                     bubbles.get(i).cramp();
-                    bubbles.remove(i);
+                    bubbles.remove(bubbles.size() - 1);
                 }
                 break;
                 }
