@@ -6,4 +6,6 @@ public interface Transformable {
     void setOpened();
     void setTemperature(int temperature);
     void mix();
+    int getTemperature();
+
 }

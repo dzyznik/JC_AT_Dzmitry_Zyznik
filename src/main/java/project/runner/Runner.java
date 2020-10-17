@@ -8,15 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Runner {
-    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
-        SparklingWater sprite = new SparklingWater("Green", "Yes", "Sweet", 5);
-       Material_cl glass = new Glass(56, "Black", 1.2);
-        List<Bottle> box = new ArrayList<>();
-        for (int i = 0; i < 9; i++) {
-            Bottle bottle = new Bottle(1, 0.5, 100, glass, sprite);
-            box.add(bottle);
-        }
-        Bottle bottle1 = new Bottle(1, 0.5, 100, glass, sprite);
+//    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
+//        SparklingWater sprite = new SparklingWater("Green", "Yes", "Sweet", 5);
+//       Material_cl glass = new Glass(56, "Black", 1.2);
+//        List<Bottle> box = new ArrayList<>();
+//        for (int i = 0; i < 9; i++) {
+//            Bottle bottle = new Bottle(1, 0.5, 100, glass, sprite);
+//            box.add(bottle);
+//        }
+//        Bottle bottle1 = new Bottle(1, 0.5, 100, glass, sprite);
 //        Bottle bottle2 = new Bottle(1, 0.5, 100, glass, sprite);
 //        Bottle bottle3 = new Bottle(1, 0.5, 100, glass, sprite);
 //        Bottle bottle4 = new Bottle(1, 0.5, 100, glass, sprite);
@@ -27,8 +27,8 @@ public class Runner {
 //        Bottle bottle9 = new Bottle(1, 0.5, 100, glass, sprite);
 //        Warehouse boxWithBottle = new Warehouse();
 //        boxWithBottle.warehouseBottle("boxWithBottles", 9, bottle1, bottle2, bottle3, bottle4, bottle5, bottle6, bottle7, bottle8, bottle9);
-        bottle1.getWater().warm(7);
-        bottle1.open();
+//        bottle1.getWater().warm(7);
+//        bottle1.open();
 
 
 
@@ -49,6 +49,6 @@ public class Runner {
 //        Warehouse boxWithCups = new Warehouse();
 //        boxWithCups.warehouseCups("boxWithCups",24, cup1,cup2, cup3, cup4, cup5, cup6, cup7, cup8, cup9);
 
-    }
+//    }
 
 }
