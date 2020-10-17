@@ -10,6 +10,13 @@ public abstract class Vessel implements Serializable {
     private int weight;
     private Material material;
 
+    public Vessel(double volume, double diameter,Material material){
+        this.volume = volume;
+        this.diameter = diameter;
+        this.material = material;
+        this.weight = (int) (material.getDensity() * volume / 4);
+    }
+
     public double getVolume() {
         return volume;
     }
