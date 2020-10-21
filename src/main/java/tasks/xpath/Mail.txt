@@ -1,0 +1,52 @@
+Мой Мир
+//span[text()='Мой Мир']
+//td[@class='w-x-ph__col w-x-ph__col_left']/a[3]
+
+Все проекты
+//i[@class='x-ph__menu__button__text']
+//i[text()='Все проекты']
+
+Search icon
+//form[@id='search']/label[1]
+//form[1]/label[1]
+
+Регистрация
+//a[text()='Регистрация']
+//a[@id='PH_regLink']
+
+Найти
+//button[@id='search:submit']
+//form[@id='search']/button
+
+
+Cloud icon
+//a[@title='Облако']
+//div[@class='mailbox__head mailbox__step_first']/a[@title='Облако']
+
+Леди
+//div[@class='tabs']/a[text()='Леди']
+//a[@href='//lady.mail.ru/']
+
+@mail.ru
+//select
+//div[@class='mailbox__select']
+
+Ввести пароль
+//input[@value='Ввести пароль']
+//button[@id='mailbox:submit-button']
+
+
+Создать почту
+//a[text()='Создать почту']
+//a[@id='signup']
+
+Вторая новость в списке
+//div[@class='grid__ccol i-pull-left svelte-1ombslr']/ul/li[3]
+//ul[@class='tabs-content svelte-1mkyub8 tabs-content_atlas']/li[3]
+
+Рубль
+//div[@class='rates svelte-l6oue2']/a[2]/i
+//i[@class='rate__icon rate__icon_rub svelte-r2v6pj']
+
+
+

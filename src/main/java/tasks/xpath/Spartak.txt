@@ -1,0 +1,53 @@
+Партнеры
+//ul[@id='main-nav']/li[4]
+//ul[@class='clearfix']/li[a = 'Партнерам']
+
+Иконка аккаунта
+//img[@src='/local/templates/spartak/images/user-icon.png']
+//button[@id='user-auth-menu']
+
+Иконка конфет
+//a[@id='bx_290038399_490']
+//a[@class='main-logo-icon' and @href='/catalog/candies-sp/']
+
+
+CH
+//a[@href='/?language=ch']
+//ul[@id='lang-switcher']/li[3]
+
+Главная иконка
+//img[@class='main-logo-img']
+//div[@class='main-logo']/img[1]
+
+Иконка печенька
+//a[@id='bx_290038399_489']
+//div[@class='main-logo-icons-wrap']/a[@href='/catalog/biscuits/']
+
+VK
+//a[@class='social-button' and @href='https://vk.com/spartakby']
+//div[@class='social-buttons-wrap']/a[1]
+
+Youtube
+//div[@class='social-buttons-wrap']/a[5]
+//div[@class='social-buttons-wrap']/a[contains(@href,'youtube')]
+
+
+Наши представитили
+//ul[@id='sub-nav']/li[4]
+//a[@href='/contacts/affiliates/']/span[text()='Наши представительства']
+
+О компании
+//section[@class='main-about']/div/header[1]/h2
+//section[1]/div/header/h2
+
+Quality1924Since
+//ul[@id='main-slider']/li[1]/div/div/img
+//li[@aria-hidden='false']/div/div[@class='container']/img[1]
+
+
+
+
+
+
+
+

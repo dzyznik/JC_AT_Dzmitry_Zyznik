@@ -19,7 +19,11 @@ public class Bottle extends Vessel implements Containable, Serializable {
 
 
     public Bottle(double volume, Material material) {
-        super (1.0, 2.0, Material.GLASS);
+        setVolume(volume);
+        double diameter = 2.0;
+        setDiameter(diameter);
+        setMaterial(material);
+        setWeight((int) (material.getDensity() * volume / 4));
         System.out.println("New bottle is created");
     }
 
