@@ -7,6 +7,7 @@ package main.java.project.interfaces;
 // -- int getFreeSpace() - returns an integer value of free millilitres
 // -- void open() - forces Containable to be opened
 // -- void close() - forces Containable to be closed
+// -- just test comment
 public interface Containable {
     void addStuff(Transformable stuff);
 
